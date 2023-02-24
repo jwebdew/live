@@ -1,0 +1,227 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), 
+    url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), 
+    url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+   
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), 
+    url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), 
+    url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype');
+} 
+   
+ 
+* {margin: 0; padding: 0;}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #333;
+    font-family: 'NanumBarunGothic';
+    font-weight: 400; 
+    line-height: 1;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+.title h3 {
+    font-size: 40px;
+}
+.title p {
+    color: #797979;
+    margin-top: 20px;
+}
+
+/* 🎈header */
+header {
+    width: 1440px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+} 
+header h1 {
+   margin-top: 32px;
+}
+header h1 a { 
+    display: block;
+} 
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 120px;
+    font-size: 20px;
+} 
+header .user li {
+    display: inline-block;
+    line-height: 120px;
+    margin-left: 35px;
+} 
+header .user li:nth-child(1) {
+    margin: 0;
+}
+
+
+/* 🎈.main_visual */
+.main_visual {
+    height: 640px;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 🎈.product */
+.product {
+    padding: 120px 0;
+}
+.product .title {
+    text-align: center;
+}
+.product .list {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.product .list .item {
+    width: 342px;
+}
+.product .list .item figure {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.product .list .item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product .list .item figure span {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #068e81;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 10px 0;
+}
+
+.product .list .item div {
+    padding: 25px 0;
+}
+.product .list .item div ul li {
+    display: inline-block;
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 20px;
+    border: 1px solid #797979;
+    color: #797979;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.product .list .item div h4 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 20px 0 35px;
+    word-break: keep-all;
+    height: 52px;
+}
+.product .list .item div strong {
+    font-size: 22px;
+}
+.product .list .item div strong span {
+    font-size: 16px;
+    color: #797979;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+/* 🎈 .branding */
+.branding {
+    background-color: #f0f0f0;
+    padding: 120px 0;
+}
+.branding .inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+.branding .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+.branding .inner .list .item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.branding .inner .list .item img {
+    
+}
+.branding .inner .list .item div {
+    padding: 30px 0;
+    text-align: center;
+}
+.branding .inner .list .item div h4 {
+    font-size: 20px;
+}
+.branding .inner .list .item div span {
+    display: block;
+    color: #797979;
+    text-decoration: line-through;
+    margin: 30px 0 10px;
+}
+.branding .inner .list .item div strong {
+    font-size: 22px;
+}
+.branding .inner .list .item div strong b {
+    color: #ff0000;
+    margin-left: 10px;
+}
+
+/* 🎈footer */ 
+footer {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+footer > p:nth-of-type(1) {
+    margin: 25px 0 10px;
+}
+footer ul li {
+    display: inline-block;
+}
+footer ul li span {
+    margin: 0 10px;
+}
+footer ul li:last-child {
+    color: #ff0000;
+    font-weight: 700;
+}
+footer p:nth-of-type(2) {
+    font-size: 14px;
+    margin-top: 50px;
+}
